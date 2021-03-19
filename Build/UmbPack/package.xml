@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<umbPackage>
+  <info>
+    <package>
+      <name>ApplicationInsights StatusCodeFilter</name>
+      <version>1.0.0</version>
+      <iconUrl></iconUrl>
+      <licence url="https://opensource.org/licenses/MIT">MIT</licence>
+      <url>https://github.com/AaronSadlerUK/AaronSadler.ApplicationInsights.StatusCodeFilter</url>
+      <requirements type="strict">
+        <major>8</major>
+        <minor>0</minor>
+        <patch>3</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Aaron Sadler</name>
+      <website>https://aaronsadler.dev</website>
+    </author>
+    <readme><![CDATA[Staus code filter for Application Insights to record as success instead of failure for Umbraco 8]]></readme>
+  </info>
+  <files>
+    <folder path="..\..\src\AaronSadler.ApplicationInsights.StatusCodeFilter\bin\Release\AaronSadler.ApplicationInsights.StatusCodeFilter.dll" orgPath="bin/AaronSadler.ApplicationInsights.StatusCodeFilter.dll" /> 
+  </files>
+  <Actions />
+  <control />
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes />
+</umbPackage>
