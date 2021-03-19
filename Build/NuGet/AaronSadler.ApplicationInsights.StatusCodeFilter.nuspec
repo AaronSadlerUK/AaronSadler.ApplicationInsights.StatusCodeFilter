@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>AaronSadler.ApplicationInsights.StatusCodeFilter</id>
+    <version>1.0.0</version>
+    <authors>Aaron Sadler</authors>
+    <owners>Aaron Sadler</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/AaronSadlerUK/AaronSadler.ApplicationInsights.StatusCodeFilter</projectUrl>
+    <icon>icon.png</icon>
+    <description>Staus code filter for Application Insights to record as success instead of failure for Umbraco 8</description>
+    <releaseNotes>Staus code filter for Application Insights to record as success instead of failure for Umbraco 8</releaseNotes>
+    <copyright>Copyright 2021</copyright>
+    <tags>Umbraco ApplicationInsights</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="UmbracoCms.Core" version="8.0.3" />
+		<dependency id="Microsoft.ApplicationInsights" version="2.17.0" />
+      </group>
+    </dependencies>
+  </metadata>
+        <files>
+		<file src="..\..\src\AaronSadler.ApplicationInsights.StatusCodeFilter\bin\Release\AaronSadler.ApplicationInsights.StatusCodeFilter.dll" target="lib\net472" />
+      <file src="..\icon.png"/>
+    </files>
+</package>
