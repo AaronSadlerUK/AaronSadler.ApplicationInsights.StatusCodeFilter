@@ -13,7 +13,7 @@ namespace AaronSadler.ApplicationInsights.StatusCodeFilter.TelemetryProcessors
             var statusCodesToFilter = AppSettingsManager.GetStatusCodes();
             foreach (var statusCodeToFilter in statusCodesToFilter)
             {
-                if (request != null && request.ResponseCode == statusCodeToFilter)
+                if (request != null && request.ResponseCode == statusCodeToFilter && !AppSettingsManager.GetExcludeFromApplicationInsights())
                 {
                     request.Success = true;
                 }

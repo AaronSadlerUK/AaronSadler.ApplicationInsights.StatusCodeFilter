@@ -11,6 +11,11 @@ namespace AaronSadler.ApplicationInsights.StatusCodeFilter
             return ConfigurationManager.AppSettings["ApplicationInsights.StatusCodeFilter.Enabled"] != null
                    && Convert.ToBoolean(ConfigurationManager.AppSettings["ApplicationInsights.StatusCodeFilter.Enabled"]);
         }
+        public static bool GetExcludeFromApplicationInsights()
+        {
+            return ConfigurationManager.AppSettings["ApplicationInsights.StatusCodeFilter.Exclude"] != null
+                   && Convert.ToBoolean(ConfigurationManager.AppSettings["ApplicationInsights.StatusCodeFilter.Exclude"]);
+        }
         public static IEnumerable<string> GetStatusCodes()
         {
             var statusCodeList = new List<string>{"404"};
