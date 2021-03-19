@@ -8,7 +8,10 @@ namespace AaronSadler.ApplicationInsights.StatusCodeFilter.Components
     {
         public void Initialize()
         {
-            TelemetryConfiguration.Active.TelemetryInitializers.Add(new StatusCodeFilterTelemetryInitializer());
+            if (AppSettingsManager.GetEnabled())
+            {
+                TelemetryConfiguration.Active.TelemetryInitializers.Add(new StatusCodeFilterTelemetryInitializer());
+            }
         }
 
         public void Terminate()

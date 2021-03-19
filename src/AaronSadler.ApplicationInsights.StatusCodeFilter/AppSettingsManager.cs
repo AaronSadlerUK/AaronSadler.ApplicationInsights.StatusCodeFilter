@@ -1,10 +1,16 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Configuration;
 
 namespace AaronSadler.ApplicationInsights.StatusCodeFilter
 {
     internal static class AppSettingsManager
     {
+        public static bool GetEnabled()
+        {
+            return ConfigurationManager.AppSettings["ApplicationInsights.StatusCodeFilter.Enabled"] != null
+                   && Convert.ToBoolean(ConfigurationManager.AppSettings["ApplicationInsights.StatusCodeFilter.Enabled"]);
+        }
         public static IEnumerable<string> GetStatusCodes()
         {
             var statusCodeList = new List<string>{"404"};
