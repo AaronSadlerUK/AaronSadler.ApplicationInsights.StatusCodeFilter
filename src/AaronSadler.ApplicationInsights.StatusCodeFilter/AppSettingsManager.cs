@@ -9,7 +9,7 @@ namespace AaronSadler.ApplicationInsights.StatusCodeFilter
         {
             var statusCodeList = new List<string>{"404"};
             var statusCodeSetting = ConfigurationManager.AppSettings["ApplicationInsights.StatusCodeFilter.StatusCodes"];
-            if (!string.IsNullOrEmpty(statusCodeSetting) || !string.IsNullOrWhiteSpace(statusCodeSetting))
+            if (!string.IsNullOrWhiteSpace(statusCodeSetting))
             {
                 statusCodeList.Clear();
                 statusCodeList.AddRange(statusCodeSetting.Split(','));
