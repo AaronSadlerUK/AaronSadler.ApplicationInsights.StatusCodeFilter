@@ -11,6 +11,7 @@ namespace AaronSadler.ApplicationInsights.StatusCodeFilter
             var statusCodeSetting = ConfigurationManager.AppSettings["ApplicationInsights.StatusCodeFilter.StatusCodes"];
             if (!string.IsNullOrEmpty(statusCodeSetting) || !string.IsNullOrWhiteSpace(statusCodeSetting))
             {
+                statusCodeList.Clear();
                 statusCodeList.AddRange(statusCodeSetting.Split(','));
             }
 
