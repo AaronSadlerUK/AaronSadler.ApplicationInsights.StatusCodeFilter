@@ -4,7 +4,7 @@
     <package>
       <name>ApplicationInsights StatusCodeFilter</name>
       <version>1.0.0</version>
-      <iconUrl></iconUrl>
+      <iconUrl>https://raw.githubusercontent.com/AaronSadlerUK/AaronSadler.ApplicationInsights.StatusCodeFilter/main/Build/icon.png</iconUrl>
       <licence url="https://opensource.org/licenses/MIT">MIT</licence>
       <url>https://github.com/AaronSadlerUK/AaronSadler.ApplicationInsights.StatusCodeFilter</url>
       <requirements type="strict">
@@ -20,7 +20,7 @@
     <readme><![CDATA[Staus code filter for Application Insights to record as success instead of failure for Umbraco 8]]></readme>
   </info>
   <files>
-    <folder path="..\..\src\AaronSadler.ApplicationInsights.StatusCodeFilter\bin\Release\AaronSadler.ApplicationInsights.StatusCodeFilter.dll" orgPath="bin/AaronSadler.ApplicationInsights.StatusCodeFilter.dll" /> 
+    <file  path="..\..\src\AaronSadler.ApplicationInsights.StatusCodeFilter\bin\Release\AaronSadler.ApplicationInsights.StatusCodeFilter.dll" orgPath="bin/AaronSadler.ApplicationInsights.StatusCodeFilter.dll" /> 
   </files>
   <Actions />
   <control />
